@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font we use it */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+@layer base {
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+
+@layer components {
+
+  body {
+    @apply font-Raleway scrollbar tracking-widest bg-[#3d405b] text-[#e5e5e5];
+  }
+
+  input {
+    @apply w-56 h-8 bg-[#14213d] m-2 p-4 focus:bg-[#e5e5e5] focus:scale-110 focus:text-[#14213d] outline-none rounded-lg shadow-lg shadow-[#355070] dark:shadow-lg dark:shadow-[#355070];
+  }
+
+  input::placeholder {
+    @apply text-sm;
+  }
+
+  .inputs .price #total {
+    @apply m-2 ml-5 py-0.5 px-4 text-[#14213d] rounded-lg flex justify-center border-solid border-2 border-[#14213d];
+  }
+
+  .inputs .createBtnSt{
+    @apply text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-base px-6 py-2 text-center mb-3;
+  }
+
+  .inputs .updateBtnSt{
+    @apply text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-base px-6 py-2 text-center mb-3;
+  }
+
+  .outputs .deleteAll button {
+    @apply min-w-[5rem] max-w-[auto] sm:min-w-[7rem] mt-9 mr-5 mb-2 py-0.5 text-xs sm:text-base text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-2 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg px-5 text-center;
+  }
+
+  .outputs .searchBlock input {
+    @apply w-72 sm:w-96 md:w-[555px] mr-8 shadow-lg shadow-gray-600/60 focus:shadow-blue-900/90 dark:shadow-lg focus:dark:shadow-blue-800/80;
+  }
+
+  .outputs .searchBlock .searchBtns button {
+    @apply mx-0 sm:m-2 p-1 px-3 text-xs sm:text-sm bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-2 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-xl text-center;
+  }
+
+  .outputs table tr th {
+    @apply text-[#e0e1dd] text-xl;
+  }
+
+  .outputs tbody tr td #update {
+    @apply text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-2 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 rounded-3xl text-sm text-center px-2 py-1;
+  }
+
+  .outputs tbody tr td #delete {
+    @apply text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-2 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 rounded-3xl text-sm text-center px-2 py-1;
+  }
+
+  .outputs table th {
+    @apply uppercase pb-3 px-2;
+  }
+
+  th,
+  td {
+    @apply lowercase py-1 px-4;
+  }
+}
+
+
+@layer utilities {
+  
+  .scrollbar::-webkit-scrollbar {
+    width: 11px;
+    height: 0px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+      border-radius: 1px;
+      background: #14213d;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+      background: #e5e5e5;
+      border-radius: 100vh;
+      border: 2px solid #e5e5e5;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #3d405b;
+  }
+}
