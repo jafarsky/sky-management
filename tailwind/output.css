@@ -1205,36 +1205,26 @@ th,
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
-.scrollbar::-webkit-scrollbar {
-  width: 11px;
-  height: 0px;
-}
-
-.scrollbar::-webkit-scrollbar-track {
-  border-radius: 1px;
-  background: #14213d;
-}
-
-.scrollbar::-webkit-scrollbar-thumb {
-  background: #e5e5e5;
-  border-radius: 100vh;
-  border: 2px solid #e5e5e5;
-}
-
-.scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #3d405b;
-}
-
 /* font we use it */
 
-.hover\:text-purple-700:hover {
+.hover\:text-purple-600:hover {
   --tw-text-opacity: 1;
-  color: rgb(126 34 206 / var(--tw-text-opacity));
+  color: rgb(147 51 234 / var(--tw-text-opacity));
 }
 
 .hover\:text-purple-400:hover {
   --tw-text-opacity: 1;
   color: rgb(192 132 252 / var(--tw-text-opacity));
+}
+
+.hover\:text-purple-200:hover {
+  --tw-text-opacity: 1;
+  color: rgb(233 213 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-purple-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(216 180 254 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
