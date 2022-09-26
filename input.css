@@ -54,7 +54,7 @@
   }
 
   .outputs table tr th {
-    @apply text-[#e0e1dd] text-xl;
+    @apply text-[#e0e1dd] text-sm md:text-xl;
   }
 
   .outputs tbody tr td #update {

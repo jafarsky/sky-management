@@ -868,10 +868,17 @@ input::placeholder {
 }
 
 .outputs table tr th {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(224 225 221 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .outputs table tr th {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 .outputs tbody tr td #update {
