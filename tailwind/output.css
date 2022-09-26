@@ -567,7 +567,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 11px;
+  width: 8px;
   height: 0px;
 }
 
@@ -577,13 +577,12 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #e5e5e5;
+  background: #6c757d;
   border-radius: 100vh;
-  border: 2px solid #e5e5e5;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background: #3d405b;
+  background: #adb5bd;
 }
 
 input {
@@ -1205,21 +1204,21 @@ th,
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
-/* font we use it */
+/***************************************** font we use it **************************/
 
 .hover\:text-purple-600:hover {
   --tw-text-opacity: 1;
   color: rgb(147 51 234 / var(--tw-text-opacity));
 }
 
-.hover\:text-purple-400:hover {
-  --tw-text-opacity: 1;
-  color: rgb(192 132 252 / var(--tw-text-opacity));
-}
-
 .hover\:text-purple-300:hover {
   --tw-text-opacity: 1;
   color: rgb(216 180 254 / var(--tw-text-opacity));
+}
+
+.hover\:text-purple-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(192 132 252 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* font we use it */
+/***************************************** font we use it **************************/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 @layer base {
@@ -79,7 +79,7 @@
 @layer utilities {
   
   .scrollbar::-webkit-scrollbar {
-    width: 11px;
+    width: 8px;
     height: 0px;
   }
 
@@ -89,12 +89,11 @@
   }
 
   .scrollbar::-webkit-scrollbar-thumb {
-      background: #e5e5e5;
+      background: #6c757d;
       border-radius: 100vh;
-      border: 2px solid #e5e5e5;
   }
 
   .scrollbar::-webkit-scrollbar-thumb:hover {
-      background: #3d405b;
+      background: #adb5bd;
   }
 }
