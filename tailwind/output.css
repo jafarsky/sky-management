@@ -1217,11 +1217,6 @@ th,
   color: rgb(192 132 252 / var(--tw-text-opacity));
 }
 
-.hover\:text-purple-200:hover {
-  --tw-text-opacity: 1;
-  color: rgb(233 213 255 / var(--tw-text-opacity));
-}
-
 .hover\:text-purple-300:hover {
   --tw-text-opacity: 1;
   color: rgb(216 180 254 / var(--tw-text-opacity));
