@@ -9,6 +9,7 @@ let category = document.getElementById('category');
 let createBtnSt = document.querySelector('.createBtnSt');
 let updateBtnSt = document.querySelector('.updateBtnSt');
 
+let scrollUPbtn = document.getElementById('scrollUPbtn');
 let createAleart = document.getElementById('createAleart');
 let outputs = document.getElementById('outputs');
 let tbody = document.getElementById('tbody');
@@ -25,6 +26,22 @@ if (localStorage.product != null ) {
 else {
     dataProduct = [];
 }
+
+
+window.onscroll = _ =>  {   if (scrollY > 444)  scrollUPbtn.classList.remove("hidden");
+                            else                scrollUPbtn.classList.add("hidden");
+                        }
+
+
+/******************* scroll up */
+function scrollUP()
+{
+    scroll ({
+                top: 0,
+                behavior: 'smooth',
+            });
+} //------------------------------- scrollUP()
+
 
 /******************* get total ***/
 function getTotal()
@@ -206,15 +223,10 @@ function updateData(i)
     category.value = dataProduct[i].category;
 
     getTotal(); // to get total of price of product we r wanna to update
-
+    scrollUP();
     count.style.display = 'none';
     updateBtnSt.style.display = 'block';
     createBtnSt.style.display = 'none';
-
-    scroll({
-        top : 0,
-        behavior : 'smooth',
-    });
 } //------------------- updateData()
 
 
